@@ -1,6 +1,6 @@
 /*Gaurangi Tripathi B.Tech CSE Section E 2014657
   Given an array of nonnegative integers, design a linear algorithm and implement it using a program to find whether given key element is present in the array or not.
-
+  Also, find number of comparisons.
   (Time Complexity = O(n), where n is the size of input) 
   Date of Work: 18-07-21
 */
@@ -23,9 +23,9 @@ public class linearsearch
 		int x = sc.nextInt();
 		int res = search(arr,x);
 		if(res == -1)
-			System.out.print("Element is not present in array");
+			System.out.print("Not present");
 		else
-			System.out.print("Element found at " + res);
+			System.out.print("Present " + res);
 		sc.close();
 	}
 	public static int search(int arr[], int x)
