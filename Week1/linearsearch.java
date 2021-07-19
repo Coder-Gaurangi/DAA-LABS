@@ -34,7 +34,7 @@ public class linearsearch
 		for(int i = 0; i < len; i++)
 		{
 			if(arr[i] == x)
-				return i;
+				return i+1;
 		}
 		return -1;
 	}
