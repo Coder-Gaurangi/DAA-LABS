@@ -14,21 +14,23 @@ public class linearsearch
 		System.out.println("\nEnter number of test cases: ");
        		int t = sc.nextInt();
         	while(t-- > 0)
-		System.out.println("Enter array length: ");
-		int n = sc.nextInt();
-		int arr[] = new int[n];
-		System.out.println("Enter elements of array: ");
-		for(int i = 0; i < n; i++)
 		{
-			arr[i] = sc.nextInt();
+			System.out.println("Enter array length: ");
+			int n = sc.nextInt();
+			int arr[] = new int[n];
+			System.out.println("Enter elements of array: ");
+			for(int i = 0; i < n; i++)
+			{
+				arr[i] = sc.nextInt();
+			}
+			System.out.println("Enter element to search: ");
+			int x = sc.nextInt();
+			int res = search(arr,x);
+			if(res == -1)
+				System.out.print("Not present");
+			else
+				System.out.print("Present " + res);
 		}
-		System.out.println("Enter element to search: ");
-		int x = sc.nextInt();
-		int res = search(arr,x);
-		if(res == -1)
-			System.out.print("Not present");
-		else
-			System.out.print("Present " + res);
 		sc.close();
 	}
 	public static int search(int arr[], int x)
