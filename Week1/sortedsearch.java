@@ -11,7 +11,7 @@ class sortedsearch
 public static void main(String[] args) 
     {
     	Scanner sc = new Scanner(System.in);
-		System.out.println("\nEnter number of test cases: ");
+	    System.out.println("\nEnter number of test cases: ");
         int t = sc.nextInt();
         while(t-- > 0)
 	{
@@ -32,7 +32,7 @@ public static void main(String[] args)
 			System.out.print("Present " + (res+1));
 	}
 	sc.close();
-    }
+   }
  private static int binarySearch(int arr[], int x)
     {
     	int i;
