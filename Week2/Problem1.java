@@ -45,7 +45,11 @@ class Problem1
     public static void main(String[] args)
     {
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Enter array length: ");
+	System.out.println("\nEnter number of test cases: ");
+       	int t = sc.nextInt();
+        while(t-- > 0)
+	{
+    		System.out.println("Enter array length: ");
 		int n = sc.nextInt();
 		int A[] = new int[n];
 		System.out.println("Enter elements of array: ");
@@ -55,17 +59,18 @@ class Problem1
 		}
 		System.out.println("Enter element to search: ");
 		int key = sc.nextInt();
-        int first = binarySearch(A, key, true);
-        int last = binarySearch(A, key, false);
-        int c = last - first + 1;
-        if (first != -1) 
-        {
-            System.out.println(key + " Present " + c + " times");
-        }
-        else 
-        {
-            System.out.println("Not Present");
-        }
+        	int first = binarySearch(A, key, true);
+        	int last = binarySearch(A, key, false);
+        	int c = last - first + 1;
+        	if (first != -1) 
+        	{
+            		System.out.println(key + " Present " + c + " times");
+        	}
+        	else 
+        	{
+            		System.out.println("Not Present");
+        	}
+	}
         sc.close();
     }
 }
