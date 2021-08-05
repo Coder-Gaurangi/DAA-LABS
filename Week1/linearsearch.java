@@ -11,6 +11,9 @@ public class linearsearch
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
+		System.out.println("\nEnter number of test cases: ");
+       		int t = sc.nextInt();
+        	while(t-- > 0)
 		System.out.println("Enter array length: ");
 		int n = sc.nextInt();
 		int arr[] = new int[n];
