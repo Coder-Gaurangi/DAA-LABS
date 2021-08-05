@@ -43,7 +43,11 @@ class ExponentialSearch
     public static void main(String[] args)
     {
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Enter array length:");
+	System.out.println("\nEnter number of test cases: ");
+       	int t = sc.nextInt();
+        while(t-- > 0)
+	{
+		System.out.println("Enter array length:");
 		int n = sc.nextInt();
 		int A[] = new int[n];
 		System.out.println("Enter array elements:");
@@ -53,16 +57,16 @@ class ExponentialSearch
 		}
 		System.out.println("Enter element to search:");
 		int key = sc.nextInt();
-        int result = Search(A, key);
- 
-        if (result != -1) 
-        {
-            System.out.println("Present: " + (result + 1));
-        }
-        else 
-        {
-            System.out.println("Not Present");
-        }
+		int result = Search(A, key);
+		if (result != -1) 
+		{
+	    		System.out.println("Present: " + (result + 1));
+		}
+		else 
+		{
+	    		System.out.println("Not Present");
+		}
+	}
         sc.close();
     }
 }
