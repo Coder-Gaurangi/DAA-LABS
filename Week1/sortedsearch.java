@@ -11,6 +11,10 @@ class sortedsearch
 public static void main(String[] args) 
     {
     	Scanner sc = new Scanner(System.in);
+	System.out.println("\nEnter number of test cases: ");
+        int t = sc.nextInt();
+        while(t-- > 0)
+	{
 		System.out.println("Enter array length: ");
 		int n = sc.nextInt();
 		int arr[] = new int[n];
@@ -21,12 +25,13 @@ public static void main(String[] args)
 		}
 		System.out.println("Enter element to search: ");
 		int x = sc.nextInt();
-        int res = binarySearch(arr,x);
-        if(res == -1)
+		int res = binarySearch(arr,x);
+		if(res == -1)
 			System.out.print("Element is not present in array");
 		else
 			System.out.print("Present " + (res+1));
-		sc.close();
+	}
+	sc.close();
     }
  private static int binarySearch(int arr[], int x)
     {
