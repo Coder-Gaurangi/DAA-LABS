@@ -1,4 +1,6 @@
+/*Gaurangi Tripathi B.Tech CSE 2015657
 
+*/
 import java.util.Scanner;
 public class DuplicateElements 
 {
