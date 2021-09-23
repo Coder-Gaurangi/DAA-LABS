@@ -1,10 +1,8 @@
 /*Gaurangi Tripathi B.Tech CSE Section E 2014657
-  Given a sorted array of positive integers containing few duplicate elements, design an algorithm
-and implement it using a program to find whether the given key element is present in the array
-or not. If present, then also find the number of copies of given key. (Time Complexity = O(log n))
-We can perform a linear search on the array and count the number of occurrences of the given element. 
-We can use binary search algorithm and find indices of first and last occurrences of the given number and return ONE more than the difference between the two indices.
-
+ Question: Given a sorted array of positive integers containing few duplicate elements, design an algorithm and implement it using a program to find whether the given key element is present in the array or not.
+ If present, then also find the number of copies of given key. (Time Complexity = O(log n))
+ We can perform a linear search on the array and count the number of occurrences of the given element. 
+ We can use binary search algorithm and find indices of first and last occurrences of the given number and return ONE more than the difference between the two indices.
 */
 
 package prg;
