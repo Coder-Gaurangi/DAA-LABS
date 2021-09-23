@@ -1,3 +1,25 @@
+/* Gaurangi Tripathi B.Tech CSE 2014657
+
+Question: Given an unsorted array of integers, design an algorithm and a program to sort the array using insertion sort. Your program should be able to find number of comparisons and shifts (shifts total number of times the array elements are shifted from their place) required for sorting the array.
+	Input Format:
+		The first line contains number of test cases, T. For each test case, there will be two input lines.
+		First line contains n (the size of array).
+		Second line contains space-separated integers describing array.
+	Output Format:
+		The output will have T number of lines.
+		For each test case T, there will be three output lines.
+		First line will give the sorted array.
+		Second line will give total number of comparisons.
+		Third line will give total number of shift operations required.
+	Sample Input: 
+		1
+		8
+		-23 65 -31 76 46 89 45 32
+	Sample Output: 
+		-31 -23 32 45 46 65 76 89
+		comparisons = 13
+		shifts = 20
+*/
 package prg;
 import java.util.Scanner;
 class InsertionSort {
