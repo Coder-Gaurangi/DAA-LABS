@@ -1,5 +1,19 @@
 /*Gaurangi Tripathi B.Tech CSE 2015657
-
+Question: Given an unsorted array of positive integers, design an algorithm and implement it using a program to find whether there are any duplicate elements in the array or not. (use sorting) (Time omplexity=0(n log n))
+	Input Format:
+		The first line contains number of test cases, T.
+		For each test case, there will be two input lines.
+		First line contains n (the size of array).
+		Second line contains space-separated integers describing array.
+	Output Format:
+		The output will have T number of lines.
+		For each test case, output will be 'YES' if duplicates are present otherwise 'NO'.
+	Sample Input:
+		1
+		5
+		28 52 83 14 75
+	SAMPLE Output:
+		No
 */
 import java.util.Scanner;
 public class DuplicateElements 
